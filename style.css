@@ -3,12 +3,32 @@ Color palette:
 https://coolors.co/006c46-3d926c-79b791-abd1b5-d9ffd9-c0f0fb-4a9ce6-005984-007399-337f90
 */
 
+/*** FONTS ***/
+
+@font-face {
+    font-family: 'Noto';
+    src: url('assets/fonts/noto-regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('assets/fonts/noto-bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /*** TAGS (Individual) ***/
 
 a {
     text-decoration: none;
     display: inline-block;
     color: #007399;
+}
+
+b {
+    color: #79B791;
 }
 
 body {
@@ -25,21 +45,16 @@ button {
     margin: 10px auto;
     padding: 10px 20px;
     border-radius: 40px;
-    background-color: #79B791;
     border: none;
-    color: white;
     transition: all 0.3s;
 }
 
 button:hover {
-    background-color: #3D926C;
-    color: white;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 button:active {
-    background-color: #ABD1B5;
     transition: all 0.3s;
 }
 
@@ -60,19 +75,10 @@ h1 {
 
 h2 {
     font-size: 30px;
-    margin: 0px;
-    padding: 10px 0px;
 }
 
 h3 {
-    font-size: 20px;
-    margin: 0px;
-    padding: 10px 0px;
-}
-
-h4 {
-    margin: 0px;
-    padding: 10px 0px;
+    font-size: 22px;
 }
 
 header {
@@ -80,7 +86,7 @@ header {
     top: 0;
     right: 0;
     z-index: 3;
-    padding: 16px 16px 0 16px;
+    padding: 20px 20px 0 20px;
     background-image: linear-gradient(rgba(0, 89, 132, 1), rgba(0, 89, 132, 0.75), rgba(0, 89, 132, 0.5), rgba(0, 89, 132, 0));
     width: 100%;
     height: 80px;
@@ -126,11 +132,20 @@ main section div {
 }
 
 nav {
-    right: 20px;
+    right: 30px;
 }
 
 nav > * {
-    margin-left: 12px;
+    margin-left: 30px;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+nav > *:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    will-change: transform;
+    transition: all 0.3s;
 }
 
 section {
@@ -143,7 +158,7 @@ section:not(.title) {
 }
 
 select {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 small {
@@ -172,10 +187,11 @@ textarea {
     resize: vertical;
 }
 
-video {
+video, iframe {
     display: block;
-    width: 100%;
-    height: 315px;
+    aspect-ratio: 16/9;
+    width: 640px;
+    max-width: 100%;
     margin: 30px auto;
     box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
     border: none;
@@ -195,10 +211,10 @@ body, html {
 }
 
 body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
-    font-family: Helvetica, Calibri, Arial, sans-serif;
+    font-family: 'Noto', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-button:hover, video:hover {
+button:hover, video:hover, iframe:hover {
     box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     will-change: transform;
@@ -209,8 +225,13 @@ h1, h2, h3, button, p.center, small.center, p.btn {
     text-align: center;
 }
 
-h4, p, b, i, input, textarea, select, label, button {
-    font-size: 16px;
+h2, h3, h4 {
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+h4, p, b, i, input, textarea, select, label, button, li {
+    font-size: 18px;
 }
 
 header > *, nav > * {
@@ -223,7 +244,7 @@ input, select {
     background-color: white;
 }
 
-input, select, textarea, video, #group-pic {
+input, select, textarea, video, iframe, #group-pic {
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
     border: 1px solid #dddddd;
     border-radius: 12px;
@@ -238,19 +259,7 @@ ul, ol {
     margin: 0;
 }
 
-/*** CLASSES ***/
-
-body.home div.gradient, body.home section.title {
-    height: 100vh;
-}
-
-body.about div.gradient, body.about section.title {
-    height: 50vh;
-}
-
-body.model div.gradient, body.model section.title {
-    height: 50vh;
-}
+/*** CLASSES (Individuals) ***/
 
 div.btns {
     margin: 0;
@@ -277,19 +286,57 @@ section.title {
     flex-direction: column;
 }
 
+/*** CLASSES (Multiple) ***/
+
+body.home div.gradient, body.home section.title {
+    height: 100vh;
+}
+
+body.about div.gradient, body.about section.title {
+    height: 50vh;
+}
+
+body.model div.gradient, body.model section.title {
+    height: 50vh;
+}
+
+button.dark, button.light:active {
+    color: white;
+}
+
+button.dark.blue {
+    background-color: #4A9CE6;
+}
+
+button.dark.green {
+    background-color: #3D926C;
+}
+
+button.light.blue {
+    background-color: #C0F0FB;
+}
+
+button.light.green {
+    background-color: #D9FFD9;
+}
+
+button.light, button.dark:active {
+    color: black;
+}
+
 /*** IDS ***/
 
 #group-pic {
     display: block;
-    width: 400px;
-    max-width: calc(100% - 50px);
+    width: 100%;
     margin: 20px auto;
 }
 
 #nav-logo {
+    top: 20px;
     left: 20px;
 }
 
 #nav-logo img {
-    height: 40px;
+    height: 50px;
 }
