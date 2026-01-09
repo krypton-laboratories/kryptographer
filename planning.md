@@ -1,11 +1,17 @@
-# Innovation Website
+# Planning
 
-## Overview
+- Crop group pic
+- Make video dimensions same as aspect ratio
+- Add vertical line in btw About and Model in nav
+
+## From Student Guide
+
+### Overview
 With a website, teams will broadcast to the public what they are working on, including its **feasibility** and **potential impact**.
 The Judges will review each website to understand not only the team’s vision and technology, but also how they plan to
 communicate the idea to the world.
 
-## Requirements
+### Requirements
 1. Story: Tell the team's story to the public
     * Mission
     * Vision
