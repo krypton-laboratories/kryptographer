@@ -34,6 +34,7 @@ b {
 body {
     line-height: 1.75;
     z-index: 0;
+    background-color: #ffffff;
 }
 
 body > * {
@@ -125,6 +126,7 @@ li {
 main {
     padding: 0 40px 32px 40px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 main section div {
@@ -339,4 +341,15 @@ button.light, button.dark:active {
 
 #nav-logo img {
     height: 50px;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
 }
