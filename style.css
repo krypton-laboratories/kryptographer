@@ -28,7 +28,7 @@ a {
 }
 
 b {
-    color: #79B791;
+    color: #3D926C;
 }
 
 body {
@@ -351,5 +351,4 @@ button.light, button.dark:active {
     width: 100%;
     z-index: 0;
     pointer-events: none;
-}
 }
