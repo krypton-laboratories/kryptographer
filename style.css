@@ -246,7 +246,7 @@ input, select {
     background-color: white;
 }
 
-input, select, textarea, video, iframe, #group-pic {
+input, select, textarea, video, iframe, #group-pic, div.card {
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
     border: 1px solid #dddddd;
     border-radius: 12px;
@@ -324,6 +324,24 @@ button.light.green {
 
 button.light, button.dark:active {
     color: black;
+}
+
+div.about.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    margin: 20px 0px;
+}
+
+div.about.card > * {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+div.about.card-group {
+    /* Change background color of each div */
 }
 
 /*** IDS ***/
