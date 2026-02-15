@@ -331,17 +331,28 @@ div.about.card {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid blue; */
-    margin: 20px 0px;
+    padding: 20px 0px;
+    margin: 50px 0px;
 }
 
 div.about.card > * {
-    /* border: 1px solid red; */
-    padding: 10px;
+    padding: 0px 50px;
+    color: white;
 }
 
-div.about.card-group {
-    /* Change background color of each div */
+div.card-group div.card:nth-child(1) {
+    /* nth-child count starts at 1 */
+    background-color: #79B791;
+}
+
+div.card-group div.card:nth-child(2) {
+    /* nth-child count starts at 1 */
+    background-color: #3D926C;
+}
+
+div.card-group div.card:nth-child(3) {
+    /* nth-child count starts at 1 */
+    background-color: #006C46;
 }
 
 /*** IDS ***/
@@ -349,7 +360,7 @@ div.about.card-group {
 #group-pic {
     display: block;
     width: 100%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 #nav-logo {
@@ -369,4 +380,12 @@ div.about.card-group {
     width: 100%;
     z-index: 0;
     pointer-events: none;
+}
+
+/*** MEDIA ***/
+
+@media (max-width: 600px) {
+    div.about.card {
+        flex-direction: column;
+    }
 }
