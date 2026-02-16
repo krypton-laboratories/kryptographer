@@ -229,7 +229,7 @@ button:hover, video:hover, iframe:hover {
     transition: all 0.3s;
 }
 
-h1, h2, h3, button, p.center, small.center, p.btn {
+h1, h2, h3, button, p.center, small.center, p.btn, b.center {
     text-align: center;
 }
 
@@ -292,6 +292,25 @@ div.gradient {
     width: inherit;
     background-image: linear-gradient(to bottom right, #4A9CE6, #006C46, #007399, #007399);
     z-index: -1;
+}
+
+div.list-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    align-items: flex-start;
+}
+
+div.list-item p {
+    margin: 0px 0px 5px 0px;
+}
+
+img.custom-bullet {
+    display: block;
+    width: 25px;
+    object-fit: contain;
+    margin: 3px 15px 0px 0px;
 }
 
 section.title {
