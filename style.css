@@ -7,6 +7,7 @@ https://coolors.co/006c46-3d926c-79b791-abd1b5-d9ffd9-c0f0fb-4a9ce6-005984-00739
 
 :root {
     --red: #e74c3c;
+    --yellow: #fff9b8;
 }
 
 /*** FONTS ***/
@@ -285,7 +286,6 @@ div.btns {
 
 div.card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px 25px;
@@ -365,6 +365,10 @@ h2.blue {
     color: #005984;
 }
 
+h2.green {
+    color: #006C46;
+}
+
 img.bio-pic {
     object-fit: contain;
     width: 125px;
@@ -414,6 +418,10 @@ ul.custom {
 
 /*** CLASSES (Multiple) ***/
 
+b.yellow, h2.yellow {
+    color: var(--yellow);
+}
+
 body.home div.gradient, body.home section.title {
     height: 100vh;
 }
@@ -448,6 +456,14 @@ button.light.green {
 
 button.light, button.dark:active {
     color: black;
+}
+
+div.card.column {
+    flex-direction: column;
+}
+
+div.card.row {
+    flex-direction: row;
 }
 
 div.card.split-half > * {
@@ -489,7 +505,7 @@ div.card.split-half > * {
 /*** MEDIA ***/
 
 @media (max-width: 600px) {
-    div.card {
+    div.card.row {
         flex-direction: column;
     }
     div.card.split-half > * {

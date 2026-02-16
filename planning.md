@@ -1,7 +1,10 @@
 # Planning
 
 ## Extra
-- Add more info from innovation brief
+- Add more info from innovation brief (review all questions)
+- ✅ Style info (especially on model page)
+- ✅ Refactor cards to allow rows and columns
+- ✅ Remove repetitive info on all pages
 - ✅ Add styling to mission, vision, and values
 - ✅ Add particle bkgd to all title bkgds on all pages (about, model)
 - ✅ Brief bio and pic for each team member on About page
