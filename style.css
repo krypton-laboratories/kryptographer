@@ -247,7 +247,7 @@ img.bio-pic {
     width: 125px;
     height: 125px;
     padding: 20px 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
 }
 
 img.circle {
@@ -261,7 +261,7 @@ input, select {
 }
 
 input, select, textarea, video, iframe, #group-pic, div.card {
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
     border: 1px solid #dddddd;
     border-radius: 12px;
     color: black;
