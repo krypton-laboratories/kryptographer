@@ -242,6 +242,18 @@ header > *, nav > * {
     color: #D9FFD9;
 }
 
+img.bio-pic {
+    object-fit: contain;
+    width: 125px;
+    height: 125px;
+    padding: 20px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img.circle {
+    border-radius: 50%;
+}
+
 input, select {
     width: 100%;
     padding: 8px;
@@ -295,13 +307,20 @@ div.card {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 20px 25px;
     margin: 50px 0px;
 }
 
 div.card > * {
-    padding: 0px 50px;
+    padding: 0px 25px;
     color: white;
+}
+
+div.centered-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.card-group.blue div.card:nth-child(1) {
