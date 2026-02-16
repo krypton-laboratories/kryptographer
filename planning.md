@@ -1,5 +1,11 @@
 # Planning
 
+## Extra
+- ✅ Add styling to mission, vision, and values
+- Add cool bkgd to all title bkgds on all pages (about, model)
+- Brief bio for each team member on About page
+- Add more info from case brief
+
 ## From Student Guide
 
 ### Overview
