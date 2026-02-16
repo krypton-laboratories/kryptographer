@@ -1,8 +1,8 @@
 # Planning
 
 ## Extra
-- Style info (especially on model page)
 - Add more info from innovation brief (review all questions)
+- ✅ Style info (especially on model page)
 - ✅ Refactor cards to allow rows and columns
 - ✅ Remove repetitive info on all pages
 - ✅ Add styling to mission, vision, and values
