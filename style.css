@@ -33,10 +33,6 @@ a {
     color: #007399;
 }
 
-b {
-    color: #3D926C;
-}
-
 body {
     line-height: 1.75;
     z-index: 0;
@@ -107,13 +103,6 @@ header > * {
 header img {
     height: 30px;
     opacity: 0.7;
-    transition: all 0.3s;
-}
-
-header img:hover {
-    opacity: 1;
-    transform: scale(1.2);
-    will-change: transform;
     transition: all 0.3s;
 }
 
@@ -253,7 +242,7 @@ input, select {
 }
 
 input, select, textarea, video, iframe, #group-pic, div.card {
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
     border: 1px solid #dddddd;
     border-radius: 12px;
     color: black;
@@ -268,6 +257,14 @@ ul, ol {
 }
 
 /*** CLASSES (Individuals) ***/
+
+b.blue {
+    color: #4A9CE6;
+}
+
+b.green {
+    color: #3D926C;
+}
 
 b.red {
     color: var(--red);
@@ -291,26 +288,48 @@ div.card {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 20px 25px;
     margin: 50px 0px;
 }
 
 div.card > * {
-    padding: 0px 50px;
+    padding: 0px 25px;
     color: white;
 }
 
-div.card-group div.card:nth-child(1) {
+div.centered-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card-group.blue div.card:nth-child(1) {
+    /* nth-child count starts at 1 */
+    background-color: #337F90;
+}
+
+div.card-group.blue div.card:nth-child(2) {
+    /* nth-child count starts at 1 */
+    background-color: #007399;
+}
+
+div.card-group.blue div.card:nth-child(3) {
+    /* nth-child count starts at 1 */
+    background-color: #005984;
+}
+
+div.card-group.green div.card:nth-child(1) {
     /* nth-child count starts at 1 */
     background-color: #79B791;
 }
 
-div.card-group div.card:nth-child(2) {
+div.card-group.green div.card:nth-child(2) {
     /* nth-child count starts at 1 */
     background-color: #3D926C;
 }
 
-div.card-group div.card:nth-child(3) {
+div.card-group.green div.card:nth-child(3) {
     /* nth-child count starts at 1 */
     background-color: #006C46;
 }
@@ -342,11 +361,43 @@ div.list-item p {
     will-change: opacity, transform;
 }
 
+h2.blue {
+    color: #005984;
+}
+
+img.bio-pic {
+    object-fit: contain;
+    width: 125px;
+    height: 125px;
+    padding: 20px 0px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+img.circle {
+    border-radius: 50%;
+}
+
 img.custom-bullet {
     display: block;
     width: 25px;
     object-fit: contain;
     margin: 3px 15px 0px 0px;
+}
+
+img.linkedin {
+    object-fit: contain;
+    display: block;
+    width: 25px;
+    padding: 0px 0px 20px 0px;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+img.linkedin:hover, header img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    will-change: transform;
+    transition: all 0.3s;
 }
 
 section.title {

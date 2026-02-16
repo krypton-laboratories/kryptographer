@@ -1,10 +1,11 @@
 # Planning
 
 ## Extra
+- Add more info from innovation brief
 - ✅ Add styling to mission, vision, and values
-- Add cool bkgd to all title bkgds on all pages (about, model)
-- Brief bio for each team member on About page
-- Add more info from case brief
+- ✅ Add particle bkgd to all title bkgds on all pages (about, model)
+- ✅ Brief bio and pic for each team member on About page
+- ✅ Add LinkedIn profiles for each team member
 
 ## From Student Guide
 
