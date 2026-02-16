@@ -365,6 +365,10 @@ h2.blue {
     color: #005984;
 }
 
+h2.green {
+    color: #006C46;
+}
+
 img.bio-pic {
     object-fit: contain;
     width: 125px;
