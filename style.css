@@ -273,6 +273,10 @@ b.red {
     color: var(--red);
 }
 
+b.white {
+    color: white;
+}
+
 div.btns {
     margin: 0;
     padding: 0;
@@ -296,6 +300,10 @@ section.title {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+ul.custom {
+    list-style-type: none;
 }
 
 /*** CLASSES (Multiple) ***/
