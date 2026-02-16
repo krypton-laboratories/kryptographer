@@ -304,6 +304,21 @@ div.card > * {
     color: white;
 }
 
+div.card-group.blue div.card:nth-child(1) {
+    /* nth-child count starts at 1 */
+    background-color: #337F90;
+}
+
+div.card-group.blue div.card:nth-child(2) {
+    /* nth-child count starts at 1 */
+    background-color: #007399;
+}
+
+div.card-group.blue div.card:nth-child(3) {
+    /* nth-child count starts at 1 */
+    background-color: #005984;
+}
+
 div.card-group.green div.card:nth-child(1) {
     /* nth-child count starts at 1 */
     background-color: #79B791;

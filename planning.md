@@ -3,8 +3,8 @@
 ## Extra
 - ✅ Add styling to mission, vision, and values
 - ✅ Add particle bkgd to all title bkgds on all pages (about, model)
-- Brief bio for each team member on About page
-- Add more info from case brief
+- Brief bio and pic for each team member on About page
+- Add more info from innovation brief
 
 ## From Student Guide
 
