@@ -3,6 +3,12 @@ Color palette:
 https://coolors.co/006c46-3d926c-79b791-abd1b5-d9ffd9-c0f0fb-4a9ce6-005984-007399-337f90
 */
 
+/*** VARIABLES ***/
+
+:root {
+    --red: #e74c3c;
+}
+
 /*** FONTS ***/
 
 @font-face {
@@ -263,6 +269,10 @@ ul, ol {
 
 /*** CLASSES (Individuals) ***/
 
+b.red {
+    color: var(--red);
+}
+
 div.btns {
     margin: 0;
     padding: 0;
@@ -326,7 +336,7 @@ button.light, button.dark:active {
     color: black;
 }
 
-div.about.card {
+div.card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -335,7 +345,7 @@ div.about.card {
     margin: 50px 0px;
 }
 
-div.about.card > * {
+div.card > * {
     padding: 0px 50px;
     color: white;
 }
@@ -397,7 +407,7 @@ div.card-group div.card:nth-child(3) {
 /*** MEDIA ***/
 
 @media (max-width: 600px) {
-    div.about.card {
+    div.card {
         flex-direction: column;
     }
 }
