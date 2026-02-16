@@ -1,5 +1,9 @@
 # Planning
 
+## Extra
+- ✅ Add styling to mission, vision, and values
+- Add cool bkgd to all title bkgds on all pages (about, model)
+
 ## From Student Guide
 
 ### Overview
