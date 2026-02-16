@@ -285,7 +285,6 @@ div.btns {
 
 div.card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px 25px;
@@ -450,6 +449,14 @@ button.light, button.dark:active {
     color: black;
 }
 
+div.card.column {
+    flex-direction: column;
+}
+
+div.card.row {
+    flex-direction: row;
+}
+
 div.card.split-half > * {
     width: 50%;
 }
@@ -489,7 +496,7 @@ div.card.split-half > * {
 /*** MEDIA ***/
 
 @media (max-width: 600px) {
-    div.card {
+    div.card.row {
         flex-direction: column;
     }
     div.card.split-half > * {
