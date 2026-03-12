@@ -1,5 +1,12 @@
 # Planning
 
+## README
+✅ Personal reflection on (with no AI usage):
+- ✅ What your project is
+- ✅ Why you made it
+- ✅ How you made it
+- ✅ What you struggled with/what you learned
+
 ## Extra
 - Add more info from innovation brief (review all questions)
 - ✅ Style info (especially on model page)
